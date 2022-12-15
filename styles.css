@@ -1,0 +1,79 @@
+:root {
+  --bg-color: hsl(0, 0%, 98%);
+  --main-color: hsl(0, 0%, 8%);
+  --accent-color: hsl(0, 0%, 41%);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Epilogue", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  font-family: "Epilogue", sans-serif;
+  font-size: 15px;
+  color: var(--accent-color);
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px var(--accent-color) solid;
+  background-color: var(--bg-color);
+}
+
+/*#region Navigation */
+nav {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+nav > img {
+  height: 30px;
+}
+
+nav > div:nth-of-type(1) {
+  margin-right: auto;
+  margin-left: 80px;
+}
+
+nav > div:nth-of-type(1) > a {
+  margin-right: 40px;
+}
+
+nav > div > button {
+  margin-left: 40px;
+}
+
+nav > div > a {
+  letter-spacing: -0.5px;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+nav > div > a:hover {
+  color: var(--main-color);
+}
+
+/*#endregion */
+
+/*#region Main */
+
+/*#endregion */
+
+/*#region Attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*#endregion */
