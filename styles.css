@@ -7,19 +7,20 @@
 body {
   background-color: var(--bg-color);
   font-family: "Epilogue", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 1em;
 }
 
 button {
   font-family: "Epilogue", sans-serif;
-  font-size: 15px;
+  font-size: 1em;
   color: var(--accent-color);
-  padding: 10px 20px;
+  padding: 0.8em 1.3em;
   border-radius: 15px;
-  border: 1px var(--accent-color) solid;
+  border: 2px var(--accent-color) solid;
   background-color: var(--bg-color);
 }
 
@@ -30,28 +31,28 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0px;
+  padding: 1.5em 0px;
 }
 
 nav > img {
-  height: 30px;
+  height: 28px;
 }
 
 nav > div:nth-of-type(1) {
   margin-right: auto;
-  margin-left: 80px;
+  margin-left: 5em;
 }
 
 nav > div:nth-of-type(1) > a {
-  margin-right: 40px;
+  margin-right: 2.5em;
 }
 
 nav > div > button {
-  margin-left: 40px;
+  margin-left: 2.5em;
 }
 
 nav > div > a {
-  letter-spacing: -0.5px;
+  letter-spacing: -0.02em;
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -64,6 +65,44 @@ nav > div > a:hover {
 
 /*#region Main */
 
+main {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  margin: 5em;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+p {
+  max-width: 400px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: var(--accent-color);
+}
+
+main > img {
+  width: 400px;
+  margin-left: 6em;
+}
+
+main > div > button {
+  margin-top: 2em;
+  background-color: var(--main-color);
+  border: 2px var(--main-color) solid;
+  color: var(--bg-color);
+  font-size: 1.2em;
+  font-weight: 800;
+  padding: 1em 1.5em;
+}
+
+main > div > button:hover {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  border: 2px var(--accent-color) solid;
+}
 /*#endregion */
 
 /*#region Attribution */
