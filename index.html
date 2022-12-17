@@ -3,33 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="styles.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Epilogue"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="index.js" defer></script>
+
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
+
   <body>
+    <!-- Navigation -->
     <nav>
       <img src="images/logo.svg" alt="Snap Logo" />
+
       <div>
-        <a href="">Features</a>
-        <a href="">Company</a>
+        <!-- First Dropdown -->
+
+        <div class="drop-down">
+          <button id="features-button">
+            <span>
+              <a>Features</a>
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </span>
+          </button>
+
+          <div class="menu hide" id="features-menu">
+            <div>
+              <img src="images/icon-todo.svg" alt="" />
+              <a href="">Todo List</a>
+            </div>
+            <div>
+              <img src="images/icon-calendar.svg" alt="" />
+              <a href="">Calendar</a>
+            </div>
+            <div>
+              <img src="images/icon-reminders.svg" alt="" />
+              <a href="">Reminders</a>
+            </div>
+            <div>
+              <img src="images/icon-planning.svg" alt="" />
+              <a href="">Planning</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Dropdown -->
+
+        <div class="drop-down">
+          <button id="company-button">
+            <span>
+              <a>Company</a>
+              <img src="images/icon-arrow-down.svg" alt="" />
+            </span>
+          </button>
+
+          <div class="menu hide" id="company-menu">
+            <a href="">History</a>
+            <a href="">Our Team</a>
+            <a href="">Blog</a>
+          </div>
+        </div>
+
+        <!-- End of Menus -->
+
         <a href="">Careers</a>
         <a href="">About</a>
       </div>
+
       <div>
         <a href="">Login</a>
         <button>Register</button>
       </div>
     </nav>
+
+    <!-- End of Navigation -->
+
+    <!-- Main -->
 
     <main>
       <div>
@@ -38,18 +99,24 @@
           Get your teamin sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <button>Learn more</button>
+        <button id="learn-button">Learn more</button>
         <div></div>
       </div>
       <img src="images/image-hero-desktop.png" alt="A client using snap" />
     </main>
 
-    <div class="attribution">
+    <!-- End of Main -->
+
+    <!-- Attribution -->
+
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-        Frontend Mentor
-      </a>
+        Frontend Mentor</a
+      >
       Coded by <a href="https://github.com/nutaptap" target="_blank">Nuria</a>
-    </div>
+    </footer>
+
+    <!-- End of Attribution -->
   </body>
 </html>
