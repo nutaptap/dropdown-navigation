@@ -31,11 +31,15 @@ button:hover {
 
 /*#region Navigation */
 
+.mobile-nav {
+  display: none;
+}
+
 .hide {
   visibility: hidden;
 }
 
-nav {
+.desktop-nav {
   max-width: 1440px;
   width: 100%;
   display: flex;
@@ -44,21 +48,21 @@ nav {
   padding: 1.5em 0px;
 }
 
-nav > img {
+.desktop-nav > img {
   height: 28px;
 }
 
-nav > div:nth-of-type(1) {
+.desktop-nav > div:nth-of-type(1) {
   margin-right: auto;
   margin-left: 5em;
   display: flex;
 }
 
-nav > div:nth-of-type(1) > a {
+.desktop-nav > div:nth-of-type(1) > a {
   margin-right: 2.5em;
 }
 
-nav > div > button {
+.desktop-nav > div > button {
   margin-left: 2.5em;
 }
 
@@ -220,7 +224,7 @@ main > div > div > img:nth-of-type(4) {
 
 /*#endregion */
 
-/*#region Attribution 1000 px media queries*/
+/*#region 1000 px media queries*/
 
 @media (max-width: 1000px) {
   main {
@@ -261,28 +265,43 @@ main > div > div > img:nth-of-type(4) {
 
 /*#endregion */
 
-/*#region Attribution 7000 px media queries*/
+/*#region 750 px media queries*/
 
 @media (max-width: 750px) {
   body {
-    padding-left: 0.5%;
-    padding-right: 0.5%;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: flex;
   }
 
-  nav > div {
-    visibility: hidden;
-    max-width: 400px;
+  .desktop-nav {
+    display: none;
   }
 
-  nav {
-    max-width: 400px;
+  .mobile-nav {
+    display: flex;
+    width: 95vw;
+    max-width: 750 px;
+    padding: 1em;
+    justify-content: space-between;
+  }
+
+  .mobile-nav > img {
+    height: 28px;
+    margin-right: auto;
+  }
+
+  .mobile-nav > div > button {
+    padding: 0.2em;
+    border: none;
+  }
+
+  main {
+    width: 98vw;
   }
 
   main > img {
     content: url("images/image-hero-mobile.png");
   }
-
-  main {
-    width: 100vw;
-  }
 }
+/*#endregion */
