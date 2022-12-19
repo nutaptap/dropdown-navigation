@@ -161,6 +161,19 @@ main {
 h1 {
   font-size: 5em;
   margin-top: 1em;
+  animation: fadeTitle 1.6s;
+  position: relative;
+}
+
+@keyframes fadeTitle {
+  0% {
+    opacity: 0;
+    left: -20px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 p {
@@ -174,6 +187,18 @@ main > img {
   content: url("images/image-hero-desktop.png");
   width: 400px;
   margin-left: 11em;
+  animation: fadeInScale 2s;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 main > div > button {
@@ -184,6 +209,19 @@ main > div > button {
   font-size: 1.2em;
   font-weight: 800;
   padding: 1em 1.5em;
+  position: relative;
+  animation: fadeButton 1.8s;
+}
+
+@keyframes fadeButton {
+  0% {
+    opacity: 0;
+    bottom: -15px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
 }
 
 main > div > button:hover {
@@ -195,6 +233,19 @@ main > div > button:hover {
 main > div > div {
   display: flex;
   justify-content: space-between;
+  animation: clients 3s;
+}
+
+@keyframes clients {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 main > div > div > img {
