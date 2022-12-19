@@ -4,6 +4,10 @@
   --accent-color: hsl(0, 0%, 41%);
 }
 
+.remove {
+  display: none !important;
+}
+
 body {
   background-color: var(--bg-color);
   font-family: "Epilogue", sans-serif;
@@ -294,6 +298,71 @@ main > div > div > img:nth-of-type(4) {
   .mobile-nav > div > button {
     padding: 0.2em;
     border: none;
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    z-index: 82;
+    right: 0;
+    top: 56px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    padding-top: 1.5em;
+    padding-right: 1.5em;
+    width: 180px;
+    height: 100vh;
+    background-color: var(--bg-color);
+  }
+
+  /* .hamburger-close {
+    padding: 0;
+    border: none;
+    margin-left: 150px;
+    margin-bottom: 2.5em;
+  } */
+
+  .hamburger-menu > div:first-of-type {
+    margin-bottom: 2.5em;
+  }
+
+  .hamburger-menu > div > div {
+    margin-bottom: 1.5em;
+  }
+
+  .hamburger-menu > div > div:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .hamburger-menu > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hamburger-register {
+    width: 180px;
+  }
+
+  .hamburger-menu > div:first-of-type > div > button {
+    border: none;
+    padding: 0;
+  }
+
+  .features-links,
+  .company-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+    position: relative;
+  }
+
+  .features-links > a,
+  .company-links > a {
+    margin-top: 1.3em;
+    margin-left: 1.3em;
   }
 
   main > div > h1 {

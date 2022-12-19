@@ -94,10 +94,54 @@
 
     <nav class="mobile-nav">
       <img src="images/logo.svg" alt="" />
-      <div>
-        <button>
-          <img src="images/icon-menu.svg" alt="" />
+      <div class="hamburger-dropdown">
+        <button id="hamburger-button">
+          <img src="images/icon-menu.svg" alt="" id="button-image" />
         </button>
+        <div class="hamburger-menu hide" id="hamburger-menu">
+          <div>
+            <div>
+              <button id="features-mobile">
+                <div>
+                  <a id="features-toggle">Features</a>
+                  <img src="images/icon-arrow-down.svg" alt="" />
+                  <div
+                    class="features-links remove"
+                    id="features-hamburger-menu"
+                  >
+                    <a href="">Todo List</a>
+                    <a href="">Calendar</a>
+                    <a href="">Reminders</a>
+                    <a href="">Planning</a>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div>
+              <button id="company-mobile">
+                <div>
+                  <a id="company-toggle">Company</a>
+                  <img src="images/icon-arrow-down.svg" alt="" />
+                  <div class="company-links remove" id="company-hamburger-menu">
+                    <a href="">History</a>
+                    <a href="">Our Team</a>
+                    <a href="">Blog</a>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div>
+              <a class="hamburger-a" href="">Careers</a>
+            </div>
+            <div>
+              <a class="hamburger-a" href="">About</a>
+            </div>
+          </div>
+          <div>
+            <div> <a href="">Login</a> </div>
+            <div> <button class="hamburger-register">Register</button> </div>
+          </div>
+        </div>
       </div>
     </nav>
 
